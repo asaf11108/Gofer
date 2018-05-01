@@ -1,0 +1,31 @@
+.circle-defult{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.circle-active{
+    background-color: #47a0f9;
+    border: solid 1px #459bf3;
+}
+
+.nav-space{
+    margin-bottom: 25px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    
+}
+
+.inside{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    // object-fit: contain;
+    align-items: center;
+    justify-content: center;
+  }
+

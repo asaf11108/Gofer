@@ -1,0 +1,43 @@
+.parent{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch
+    // justify-content: center;
+    // flex: 0 0 auto;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    align-items: center;
+    flex: 0 0 70px;
+    background-color: #454c68;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.users-list{
+    flex: 0 0 280px;
+}
+
+.user-form{
+    flex: 1 0 300px;
+}
+
+.recent{
+    flex: 0 0 270px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+}
+
+.recent-users{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.recent-photos{
+    flex-grow: 1;
+    flex-basis: 0;
+}
