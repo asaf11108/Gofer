@@ -1,7 +1,10 @@
+@import '~scss/vars';
+
 .parent{
     display: flex;
     flex-flow: row nowrap;
-    align-items: stretch
+    align-items: stretch;
+    background-color: $main-bgc-color;
     // justify-content: center;
     // flex: 0 0 auto;
 }
@@ -18,10 +21,15 @@
 
 .users-list{
     flex: 0 0 280px;
+    margin-right: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.09);
+
 }
 
 .user-form{
     flex: 1 0 300px;
+    
 }
 
 .recent{
@@ -29,7 +37,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
 }
 
 .recent-users{

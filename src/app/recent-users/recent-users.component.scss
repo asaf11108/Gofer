@@ -1,5 +1,9 @@
-.recent-users{
-    display: flex;
-    flex: 1;
-    
+.pics{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+    border-radius: 50%;
 }

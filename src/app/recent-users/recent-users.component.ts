@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './recent-users.component.html',
   styleUrls: ['./recent-users.component.scss']
 })
-export class RecentUsersComponent implements OnInit {
+export class RecentUsersComponent{
+  usersDir:string = 'assets/recent/profile/';
+  numberOfPics:number = 8;
+  numbers:number[];
 
-  constructor() { }
+constructor() {
+  this.numbers = Array(this.numberOfPics).fill(0).map((x,i)=>i+1);
+ }
 
-  ngOnInit() {
+ngOnInit() {
+
   }
 
 }
