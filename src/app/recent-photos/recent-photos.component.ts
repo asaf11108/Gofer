@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recent-photos.component.scss']
 })
 export class RecentPhotosComponent implements OnInit {
-  usersDir:string = 'assets/recent/paint/';
-  numberOfPics:number = 1;
+  photosDir:string = 'assets/recent/paint/';
+  numberOfPics:number = 5;
   numbers:number[];
 
   constructor() {

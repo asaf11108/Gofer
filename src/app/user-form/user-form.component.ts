@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'user-form',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toastr: ToastrService) {
+    
+   }
 
   ngOnInit() {
+  }
+  
+  alerter(){
+    this.toastr.error('User Added', '', {
+      closeButton: true,
+    });
   }
 
 }

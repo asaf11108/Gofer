@@ -1,7 +1,9 @@
-.pics{
+.my-container{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    
 }
 
 img {

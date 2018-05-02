@@ -1,4 +1,8 @@
-<h5>Recent Photos</h5>
-<div class="pics">
-    <img *ngFor="let num of numbers" [src]="photosDir + num + '.jpg'" height="50" width="50">
+<div class="my-title">Recent Photos</div>
+<div class="my-container">
+    <img [src]="photosDir + 1 + '.jpg'" class="img-thumbnail img-defult img-1">
+    <img [src]="photosDir + 2 + '.jpg'" class="img-thumbnail img-defult img-2">
+    <img [src]="photosDir + 3 + '.jpg'" class="img-thumbnail img-defult img-3">
+    <img [src]="photosDir + 4 + '.jpg'" class="img-thumbnail img-defult img-4">
+    <img [src]="photosDir + 5 + '.jpg'" class="img-thumbnail img-defult img-5">
 </div>
