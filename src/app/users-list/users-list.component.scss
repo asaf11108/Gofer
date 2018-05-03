@@ -1,0 +1,16 @@
+
+.list-group {
+    padding-top: 0 !important;
+  }
+
+  .list-group-item {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    color: #131b3c;
+  }
+
+  .list-group-item:hover, .list-group-item:focus {
+    z-index: 1;
+    text-decoration: none;
+    background-color: #f5f7fa;
+  }

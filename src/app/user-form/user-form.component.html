@@ -1,26 +1,46 @@
-<img src="assets/gofer-logo/gofer-logo.png"/>
-<form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+<img src="assets/gofer-logo/gofer-logo.png" />
+<form class="my-container" id="contactForm" [formGroup]="contactForm" novalidate (ngSubmit)="submitUser(contactForm.value)">
+  <div class="my-title">
+    User details
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
+  <div class="user-details">
+    <div class="card">
+      <input type="text" formControlName="firstName" placeholder="First Name" [(ngModel)]="userForm.firstName" />
+    </div>
+    <div class="card">
+      <input type="text" formControlName="lastName" placeholder="Last Name" [(ngModel)]="userForm.lastName" />
+    </div>
+    <div class="card">
+      <input type="text" formControlName="birthDate" placeholder="Birth Date" [(ngModel)]="userForm.birthDate" />
+    </div>
+    <div class="card">
+      <input type="text" formControlName="phoneNumber" placeholder="Phone Number" [(ngModel)]="userForm.phoneNumber" />
+    </div>
+    <div class="card grid-col-expand">
+      <input type="text" formControlName="emailAddress" placeholder="Email Address" [(ngModel)]="userForm.emailAddress" />
+    </div>
   </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
+  <div class="my-title">
+    Account details
   </div>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+  <div class="account-details">
+    <div class="card">
+      <input type="text" formControlName="userName" placeholder="User Name" [(ngModel)]="userForm.userName" />
+    </div>
+    <div class="card grid-row-expand photo-container">
+      <!-- <input type="text" formControlName="photoPath" placeholder="Photo Path" [(ngModel)]="userForm.photoPath" /> -->
+        <div>+ Add Photo</div>
+        <img src="assets/users/Antu_im-invisible-user.png" style="width: 100px; height: 100px"/>
+    </div>
+    <div class="card">
+      <input type="text" formControlName="password" placeholder="Password" [(ngModel)]="userForm.password" />
+    </div>
+    <div class="card">
+      <input type="text" formControlName="repeatPassword" placeholder="Repeat Password" [(ngModel)]="userForm.repeatPassword" />
+    </div>
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
+  <div class="buttons-container">
+    <button mat-button color="warn">Clear</button>
+    <button mat-button color="success" type="submit">Add</button>
   </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-default" (click)="alerter()">Submit</button>
 </form>

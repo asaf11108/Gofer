@@ -1,6 +1,8 @@
 @import '~scss/vars';
 
 .parent{
+    height:100% !important;
+    width:100% !important;
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
@@ -36,7 +38,7 @@
 }
 
 .recent{
-    flex: 0 0 270px;
+    // flex: 0 0 270px;
     padding: 30px;
     display: flex;
     flex-direction: column;
