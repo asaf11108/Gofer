@@ -1,19 +1,16 @@
 <mat-list class="list-group">
   <mat-list-item class="my-title" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">Gofer Users</mat-list-item>
-  <mat-list-item class="list-group-item">
-    <img matListAvatar src="assets/recent/profile/1.jpg">
-    <div matLine> Asaf Regev </div>
+
+  <mat-list-item class="list-group-item tooltip" *ngFor="let user of data" (mouseenter)="hovering[user.userName] = true" (mouseleave)="hovering[user.userName] = false"
+    >
+    <div>
+    <img matListAvatar [src]="user.photoPath">
+    <div matLine> {{user.firstName + " " + user.lastName}} </div>
+    <button *ngIf="hovering[user.userName]" style="border: 0; background: transparent" (click)="deleteUser(user.userName)">
+      <img src="assets/close/close-remove-md.png" />
+    </button>
+  </div>
   </mat-list-item>
-  <!-- <mat-list-item *ngFor="let folder of folders">
-    <mat-icon mat-list-icon>folder</mat-icon>
-    <h4 mat-line>{{folder.name}}</h4>
-    <p mat-line> {{folder.updated | date}} </p>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <h3 mat-subheader>Notes</h3>
-  <mat-list-item *ngFor="let note of notes">
-    <mat-icon mat-list-icon>note</mat-icon>
-    <h4 mat-line>{{note.name}}</h4>
-    <p mat-line> {{note.updated | date}} </p>
-  </mat-list-item> -->
+
 </mat-list>
+

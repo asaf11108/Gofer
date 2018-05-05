@@ -1,22 +1,22 @@
 <img src="assets/gofer-logo/gofer-logo.png" />
-<form class="my-container" id="contactForm" [formGroup]="contactForm" novalidate (ngSubmit)="submitUser(contactForm.value)">
+<form class="my-container" id="contactForm" [formGroup]="contactForm" novalidate (ngSubmit)="submitUser()">
   <div class="my-title">
     User details
   </div>
   <div class="user-details">
-    <div class="card">
+    <div class="card" [class.err]="error.firstName">
       <input type="text" formControlName="firstName" placeholder="First Name" [(ngModel)]="userForm.firstName" />
     </div>
-    <div class="card">
+    <div class="card" [class.err]="error.lastName">
       <input type="text" formControlName="lastName" placeholder="Last Name" [(ngModel)]="userForm.lastName" />
     </div>
-    <div class="card">
+    <div class="card" [class.err]="error.birthDate">
       <input type="text" formControlName="birthDate" placeholder="Birth Date" [(ngModel)]="userForm.birthDate" />
     </div>
-    <div class="card">
+    <div class="card" [class.err]="error.phoneNumber">
       <input type="text" formControlName="phoneNumber" placeholder="Phone Number" [(ngModel)]="userForm.phoneNumber" />
     </div>
-    <div class="card grid-col-expand">
+    <div class="card grid-col-expand" [class.err]="error.emailAddress">
       <input type="text" formControlName="emailAddress" placeholder="Email Address" [(ngModel)]="userForm.emailAddress" />
     </div>
   </div>
@@ -24,23 +24,23 @@
     Account details
   </div>
   <div class="account-details">
-    <div class="card">
+    <div class="card" [class.err]="error.userName">
       <input type="text" formControlName="userName" placeholder="User Name" [(ngModel)]="userForm.userName" />
     </div>
-    <div class="card grid-row-expand photo-container">
+    <div class="card grid-row-expand photo-container" [class.err]="error.photoPath">
       <!-- <input type="text" formControlName="photoPath" placeholder="Photo Path" [(ngModel)]="userForm.photoPath" /> -->
-        <div>+ Add Photo</div>
-        <img src="assets/users/Antu_im-invisible-user.png" style="width: 100px; height: 100px"/>
+      <div>+ Add Photo</div>
+      <img src="assets/users/Antu_im-invisible-user.png" style="width: 100px; height: 100px" />
     </div>
-    <div class="card">
+    <div class="card" [class.err]="error.password">
       <input type="text" formControlName="password" placeholder="Password" [(ngModel)]="userForm.password" />
     </div>
-    <div class="card">
-      <input type="text" formControlName="repeatPassword" placeholder="Repeat Password" [(ngModel)]="userForm.repeatPassword" />
-    </div>
+    <div class="card" [class.err]="error.repeatPassword">
+    <input type="text" formControlName="repeatPassword" placeholder="Repeat Password" [(ngModel)]="userForm.repeatPassword" />
+  </div>
   </div>
   <div class="buttons-container">
-    <button mat-button color="warn">Clear</button>
+    <button mat-button color="warn" type="button" (click)="clearDetails()">Clear</button>
     <button mat-button color="success" type="submit">Add</button>
   </div>
 </form>

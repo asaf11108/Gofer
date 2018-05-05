@@ -14,6 +14,7 @@ export class UserFormComponent implements OnInit {
   fieldAlert: string = 'This field is required';
   contactForm: FormGroup;
   error: IError = new IError();
+  data: User[];
 
   constructor(private userService: UserService, private toastr: ToastrService) {
     this.userForm = new UserForm("", "", "", "", '', "", "", "", "");
@@ -22,64 +23,38 @@ export class UserFormComponent implements OnInit {
   }
 
   private setFormGroup() {
-    this.contactForm = new FormGroup({
-      firstName: new FormControl('', {
+    let formControl = {};
+    Object.keys(this.userForm).forEach(function (key) {
+      formControl[key] = new FormControl('', {
         validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      lastName: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      birthDate: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      phoneNumber: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      emailAddress: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      userName: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      password: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      repeatPassword: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
-      photoPath: new FormControl('', {
-        validators: Validators.required,
-        updateOn: 'submit'
-      }),
+      });
     });
+    this.contactForm = new FormGroup(formControl);
   }
 
   ngOnInit() {
+    this.userService.cast.subscribe(dataSource => this.data = dataSource);
   }
 
-  submitUser(userForm: UserForm) {
+  submitUser() {
     // if (this.checkValidation())
     //   return;
-    let user: User = new User(userForm.firstName,
-      userForm.lastName,
-      userForm.birthDate,
-      userForm.phoneNumber,
-      userForm.emailAddress,
-      userForm.userName,
-      userForm.password,
-      userForm.photoPath);
 
-      this.toastr.success('User Added', '', {
-        closeButton: true,
-      });
+    let user: User = new User(this.userForm.firstName,
+      this.userForm.lastName,
+      this.userForm.birthDate,
+      this.userForm.phoneNumber,
+      this.userForm.emailAddress,
+      this.userForm.userName,
+      this.userForm.password,
+      this.userForm.photoPath);
+
+    this.userService.addUser(user);
+
+    this.toastr.success('User Added', '', {
+      closeButton: true,
+    });
+
     // this.userService.addUser(user).subscribe(result => {
     // },
     //   error => {
@@ -89,16 +64,14 @@ export class UserFormComponent implements OnInit {
   }
 
   private checkValidation(): boolean {
-    this.error.firstName = !this.contactForm.controls['firstName'].valid;
-    this.error.lastName = !this.contactForm.controls['lastName'].valid;
-    this.error.birthDate = !this.contactForm.controls['birthDate'].valid;
-    this.error.phoneNumber = !this.contactForm.controls['phoneNumber'].valid;
-    this.error.emailAddress = !this.contactForm.controls['emailAddress'].valid;
-    this.error.userName = !this.contactForm.controls['userName'].valid;
-    this.error.password = !this.contactForm.controls['password'].valid;
-    this.error.repeatPassword = !this.contactForm.controls['repeatPassword'].valid;
-    this.error.photoPath = !this.contactForm.controls['photoPath'].valid;
+    for (let key in this.error) 
+      this.error[key] = !this.contactForm.controls[key].valid;
     return !this.contactForm.valid;
+  }
+
+  clearDetails() {
+    for (let key in this.userForm) 
+      this.userForm[key] = "";
   }
 
 
