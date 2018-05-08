@@ -1,16 +1,15 @@
-<mat-list class="list-group">
+<ng-template #popTemplate>User Details: <div [innerHtml]="html"></div></ng-template>
+<mat-list class="list-group1">
   <mat-list-item class="my-title" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">Gofer Users</mat-list-item>
 
-  <mat-list-item class="list-group-item tooltip" *ngFor="let user of data" (mouseenter)="hovering[user.userName] = true" (mouseleave)="hovering[user.userName] = false"
-    >
-    <div>
+  <mat-list-item class="list-group-item1" *ngFor="let user of data;let i = index"
+   (mouseenter)="hoveringFunc(user)" (mouseleave)="hovering[user.userName] = false"
+  [tooltip]="popTemplate" placement="bottom">
     <img matListAvatar [src]="user.photoPath">
     <div matLine> {{user.firstName + " " + user.lastName}} </div>
     <button *ngIf="hovering[user.userName]" style="border: 0; background: transparent" (click)="deleteUser(user.userName)">
       <img src="assets/close/close-remove-md.png" />
     </button>
-  </div>
   </mat-list-item>
 
 </mat-list>
-

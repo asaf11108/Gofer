@@ -3,6 +3,7 @@ import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { UserForm, User } from '../interfaces/IUser';
 import { UserService } from '../services/user.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'user-form',
@@ -15,8 +16,13 @@ export class UserFormComponent implements OnInit {
   contactForm: FormGroup;
   error: IError = new IError();
   data: User[];
+  fileToUpload: File;
+  imageUrl: string = "";
+  isLoaded: boolean = false;
 
-  constructor(private userService: UserService, private toastr: ToastrService) {
+  isOpened = false;
+
+  constructor(private userService: UserService, private toastr: ToastrService, private http: HttpClient) {
     this.userForm = new UserForm("", "", "", "", '', "", "", "", "");
     this.setFormGroup();
 
@@ -24,7 +30,7 @@ export class UserFormComponent implements OnInit {
 
   private setFormGroup() {
     let formControl = {};
-    Object.keys(this.userForm).forEach(function (key) {
+    Object.keys(this.userForm).slice(0, Object.keys(this.userForm).length - 1).forEach(function (key) {
       formControl[key] = new FormControl('', {
         validators: Validators.required,
       });
@@ -37,8 +43,8 @@ export class UserFormComponent implements OnInit {
   }
 
   submitUser() {
-    // if (this.checkValidation())
-    //   return;
+    if (this.checkValidation())
+      return;
 
     let user: User = new User(this.userForm.firstName,
       this.userForm.lastName,
@@ -47,33 +53,39 @@ export class UserFormComponent implements OnInit {
       this.userForm.emailAddress,
       this.userForm.userName,
       this.userForm.password,
-      this.userForm.photoPath);
+      this.imageUrl);
 
     this.userService.addUser(user);
 
     this.toastr.success('User Added', '', {
       closeButton: true,
     });
-
-    // this.userService.addUser(user).subscribe(result => {
-    // },
-    //   error => {
-    //     console.log(error);
-
-    //   });
+    this.clearDetails();
   }
 
   private checkValidation(): boolean {
-    for (let key in this.error) 
+    for (let key in this.error)
       this.error[key] = !this.contactForm.controls[key].valid;
     return !this.contactForm.valid;
   }
 
   clearDetails() {
-    for (let key in this.userForm) 
+    for (let key in this.userForm)
       this.userForm[key] = "";
+    this.isLoaded = false;
+    this.imageUrl = "";
   }
 
+  fileChange(fileList: FileList) {
+    this.fileToUpload = fileList.item(0);
+
+    let reader = new FileReader();
+    reader.onload = (event: any) => {
+      this.imageUrl = event.target.result;
+    }
+    reader.readAsDataURL(this.fileToUpload);
+    this.isLoaded = true;
+  }
 
 }
 
@@ -87,6 +99,5 @@ class IError {
     public userName: boolean = false,
     public password: boolean = false,
     public repeatPassword: boolean = false,
-    public photoPath: boolean = false
   ) { }
 }

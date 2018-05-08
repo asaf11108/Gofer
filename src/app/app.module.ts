@@ -8,8 +8,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-// import {MatBadgeModule} from '@angular/material/badge';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatBadgeModule} from '@angular/material/badge';
+
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { AppComponent } from './app.component';
 import { LeftNavigatorComponent } from './left-navigator/left-navigator.component';
@@ -18,6 +19,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { RecentUsersComponent } from './recent-users/recent-users.component';
 import { RecentPhotosComponent } from './recent-photos/recent-photos.component';
 import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +29,7 @@ import { UserService } from './services/user.service';
     UsersListComponent,
     UserFormComponent,
     RecentUsersComponent,
-    RecentPhotosComponent
+    RecentPhotosComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,9 +41,11 @@ import { UserService } from './services/user.service';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatTooltipModule
+    MatBadgeModule,
+    HttpClientModule,
+    TooltipModule.forRoot()
   ],
   providers: [UserService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

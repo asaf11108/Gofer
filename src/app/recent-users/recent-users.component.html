@@ -1,7 +1,6 @@
 <div class="my-title">Recent Users</div>
 <div class="my-container">
-    <img *ngFor="let num of numbers" [src]="usersDir + num + '.jpg'" height="50" width="50" />
-    <p>
-        <span matBadge="4" matBadgeOverlap="false">Text</span>
-    </p>
+    <span *ngFor="let num of numbers" matBadge="" matBadgeOverlap="true" matBadgeColor="warn" matBadgeSize="small" style="margin: 0px; padding: 0px; border-radius: 50%;" [matBadgeHidden]="num%2!=0">
+        <img [src]="usersDir + num + '.jpg'" height="50" width="50"/>
+    </span>
 </div>

@@ -27,20 +27,22 @@
     <div class="card" [class.err]="error.userName">
       <input type="text" formControlName="userName" placeholder="User Name" [(ngModel)]="userForm.userName" />
     </div>
-    <div class="card grid-row-expand photo-container" [class.err]="error.photoPath">
-      <!-- <input type="text" formControlName="photoPath" placeholder="Photo Path" [(ngModel)]="userForm.photoPath" /> -->
-      <div>+ Add Photo</div>
-      <img src="assets/users/Antu_im-invisible-user.png" style="width: 100px; height: 100px" />
-    </div>
+    <a class="grid-row-expand photo-container" href="#" (click)="fileInput.click()" [class.card]="!isLoaded">
+        <div *ngIf="!isLoaded">+ Add Photo</div>
+        <img *ngIf="!isLoaded" src="assets/users/Antu_im-invisible-user.png" style="width: 100px; height: 100px" />
+        <img *ngIf="isLoaded" [src]="imageUrl" class="img-fit" />
+    </a>
     <div class="card" [class.err]="error.password">
       <input type="text" formControlName="password" placeholder="Password" [(ngModel)]="userForm.password" />
     </div>
     <div class="card" [class.err]="error.repeatPassword">
-    <input type="text" formControlName="repeatPassword" placeholder="Repeat Password" [(ngModel)]="userForm.repeatPassword" />
-  </div>
+      <input type="text" formControlName="repeatPassword" placeholder="Repeat Password" [(ngModel)]="userForm.repeatPassword" />
+    </div>
   </div>
   <div class="buttons-container">
     <button mat-button color="warn" type="button" (click)="clearDetails()">Clear</button>
     <button mat-button color="success" type="submit">Add</button>
   </div>
 </form>
+
+<input #fileInput type="file" style="display:none;" (change)="fileChange($event.target.files)" />
