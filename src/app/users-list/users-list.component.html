@@ -7,8 +7,8 @@
   [tooltip]="popTemplate" placement="bottom">
     <img matListAvatar [src]="user.photoPath">
     <div matLine> {{user.firstName + " " + user.lastName}} </div>
-    <button *ngIf="hovering[user.userName]" style="border: 0; background: transparent" (click)="deleteUser(user.userName)">
-      <img src="assets/close/close-remove-md.png" />
+    <button class="exitButt" style="border: 0; background: transparent" (click)="deleteUser(user.userName)">
+      <img  src="assets/close/close-remove-md.png" />
     </button>
   </mat-list-item>
 
