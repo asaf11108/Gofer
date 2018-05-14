@@ -1,0 +1,202 @@
+/* based on angular-toastr css https://github.com/Foxandxss/angular-toastr/blob/cb508fe6801d6b288d3afc525bb40fee1b101650/dist/angular-toastr.css */
+
+/* position */
+.toast-center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-left {
+  top: 12px;
+  left: 12px;
+}
+.toast-top-right {
+  top: 30px;
+  right: 301px;
+}
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+/* toast styles */
+.toast-title {
+  font-weight: bold;
+}
+.toast-message {
+  word-wrap: break-word;
+}
+.toast-message a,
+.toast-message label {
+  color: #FFFFFF;
+}
+.toast-message a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #535a5f;
+  text-shadow: 0 1px 0 #ffffff;
+  /* opacity: 0.8; */
+}
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+}
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.toast-container {
+  pointer-events: none;
+  position: fixed;
+  z-index: 999999;
+}
+.toast-container * {
+  box-sizing: border-box;
+}
+.toast-container .toast {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 12px 15px 15px 45px;
+  width: 163px;
+  height: 36px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  box-shadow: 0 0 12px #999999;
+  color: #535a5f;
+
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.toast-container .toast:hover {
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  cursor: pointer;
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/info-circle.svg */
+.toast-info {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'%3E%3Cpath fill='rgb(255,255,255)' d='M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z'/%3E%3C/svg%3E");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/times-circle.svg */
+.toast-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASeSURBVGhD7Vo5jBRHFN0ALIMwNgZCp7aBcAWCqRomQQhP1SzXrrkkcIQxskQCKeJyYIMdG1syKWfCZRNxIwKEBCLn2J3utbCXG5kAlve7/2qru6tn+paDedLXzM77Z9ddvX099NBDdWjrxhxH19e6ShxwtTiBz0uulrc88b8fJ85pijUjqxbOZrP/B/5ZsWimo2vbHCVvQN4i2fEkQrqOFtfxuZV8sLvqMbZs2ceukvuRzFNboulEjKGl9j4eqH3E7quB2xJfowDHnlR2Qeu0IYMcpjy0df90R4kjtiQmRfznaHkR3w+h2J3Q3zKqxUYk+B2+/wT+T3y+iNpNCvjfHw0unsZhiwUNTiR20xpYy3foZucdVWsmSWC80ZhCuuhOJ2msWH1izD1avvhTNikGzgo5F0XctQWEnGvrJV+yamqMDNS+QNKnLX6pZe7QTMiq+eB1J1tLKPkKgTazWm74404+C8eh2JQDq2UHkv0j7NwPIN+NKrGD1QqB01w6D74fhGNhXP3GKtng6tq6qNNJKaOYkZX1z5D4cCSekkOskg7+QheaYpV87Q1s47dSivlKfm7pZiOZ1hkU8UPI0bjbqn9DSVdRDE3ZZgxPlNjDdDL4q7Z4EnQizzPdV1Ux8HvOjEE5pdrO0N7JdEBJOgNyPtMeqiiGBn94nUFP+Zbp7qDFyDTG4PuLqQCqKAY+T5n+0SrXmOoMbyseXm2bdcV0BGUX47akDvhGbolWfO88YRjS3qnbtqPMYsb7+6eiO700fbeVWM10PNB0OBQFErrIVEeUWQwmmgumX8g+puIBpeMho0NMdUVZxaCQgwGfSh5lKh5QvBIwwlacqUQooxj0ku9Nf/j7ElPxgNLtgBEWQaYSo+hi2qq2yfRFOTIVj3AhtMIylQpFFkMP0/STrJBI15LbmUqNoopxdX2X6SNR18JAOmYaYYz8yFQmFFEMEv8lYJ9osIem37hVPQ3yFoMcLpu2yHEvU/EIL4io/jktSkxnRtZi6HSI6feNaZdoQfQuGcIbNVVrMp0LWYqxbVEeKjmL6c7AuLhuGqMpTzKVG2mLoa5t6qJ1rjLVHbRVNo3pKdBtB9O5kbQYOjpE9JTcynR30OEFrRA4WDlKnGG6ECQpJtIaWoz9PdSYwXQy0MwQdAJRcj3ThaBTMZFF0Od2s2lyeK2CA3/I0bMiuxghrhg8tNfmb2iN4dStMQE4Gwo68x3SlQ2rFAJbMWGhdyqsng10oWxx/IDO06xSCDoWo+SvrJYdcVem1M1GW3IDq+WGNyaUfBWNI24WdjPvn+PFnXAQDnQ2T+u4LbEgOjuxb8S8v7LxCasWAzrwYw4P3a5MBPR2AqdoB3BvaP4HbBILb9uhRYsKiOtOFKvw1woToCZG8MO2wBOCFnqJLnIBchBJbqdDEZ7sFm8rrsTPsL8MLrB3ioo4fL/R+JDDlgc8rUFI255EHhHDtGnlMNWA5nR/0RRj9qRSyb9ovd2Z14ki4N3aY/+DLkWvmq2v0Wzi6WIDSLaVv83tBhqcdFZAovuQ4DE8ZXop6v3DAH3Hb0eJa2u5qrSB3EMPPVjQ1/ceEU3QpQekfGIAAAAASUVORK5CYII");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/check.svg */
+.toast-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFXSURBVGhD7dTNSsQwEMDxelb89gX04EsslG3aJKBPJXj26qJrUmUvPoJ3EfET8Qn25ln0uk67GamNLtoeOsH5Qw4bAjM/ChtxHMdxHMdx/7xJNNc/VtvuV6ABQhh5KIx6TXPdc7eBhQirJuUJEgOIxKjBJ8IduHvJTrN594p4PyGsfBO5St0r4jGCSoygEiOoxAgqMaJpxVAr98RQbLqbdnX1JWDIwXSQGrfGdIYwcv/rwBaYrhDxebwAkGd/cANMVwhMD/UGDHvyF/gDpmsEVmBg8KO/yC8wVBBYPNpdh8Uf/IVmYKghMJGLtcTIe3+xbzBUEZg8kqvCyjt/wQpmBiI5kVn5hkK90c4KLHbrL6rGfau3gkBgsYmXYeGb+sLwd/1evyOLwNJBuiSMuq4vXj3kEViBgWWvgkZg5Zex6jJoBFbFBIvA9JleBMhF0AiO4ziuWVH0AVHKNz5/WR6GAAAAAElFTkSuQmCC");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/exclamation-triangle.svg */
+.toast-warning {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512' width='576' height='512'%3E%3Cpath fill='rgb(255,255,255)' d='M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z'/%3E%3C/svg%3E");
+}
+.toast-container.toast-top-center .toast,
+.toast-container.toast-bottom-center .toast {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toast-container.toast-top-full-width .toast,
+.toast-container.toast-bottom-full-width .toast {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toast {
+  background-color: #030303;
+  pointer-events: auto;
+}
+.toast-success {
+  background-color: #ffffff;
+}
+.toast-error {
+  background-color: #ffffff;
+}
+.toast-info {
+  background-color: #2F96B4;
+}
+.toast-warning {
+  background-color: #F89406;
+}
+.toast-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.4;
+}
+/* Responsive Design */
+@media all and (max-width: 240px) {
+  .toast-container .toast.div {
+    padding: 8px 8px 8px 50px;
+    width: 11em;
+  }
+  .toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 241px) and (max-width: 480px) {
+  .toast-container .toast.div {
+    padding: 8px 8px 8px 50px;
+    width: 18em;
+  }
+  .toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .toast-container .toast.div {
+    padding: 15px 15px 15px 50px;
+    width: 25em;
+  }
+}

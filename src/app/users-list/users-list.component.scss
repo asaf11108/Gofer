@@ -12,46 +12,74 @@
   .list-group-item1:hover, .list-group-item1:focus {
     z-index: 1;
     text-decoration: none;
-    background-color: #f5f7fa;
+    background-color: #e0e0e0;
 
     button {
       display: inline;
     }
   }
-  
-
-  // .tooltip1 {
-  //   background-color: #fff;
-  //   color: black;
-  //   text-align: center;
-  //   padding: 5px 0;
-  //   border-radius: 6px;
- 
-  //   /* Position the tooltip text - see examples below! */
-  //   width: 282px;
-  //   height: 150px;
-  //   border: solid 1px #e6e9f2;
-  //   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
-  //   display: grid;
-  //   grid-template-columns: 45% 55%;
-  // }
-
-  // .left1{
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-  //   align-items: center;
-  // }
-
-  // .right1{
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  //   justify-content: space-around;
-  //   border-left: solid 1px #e6e9f2;
-  //   padding-left: 30px;
-  // }
 
   .exitButt{
     display: none;
+  }
+
+
+  .tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-container {
+    visibility: hidden;
+    width: 300px;
+    background-color: #e0e0e0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 2;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 282px;
+    height: 150px;
+}
+
+.tooltip .tooltip-container::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #dcdcdd transparent;
+}
+
+.tooltip:hover .tooltip-container {
+    visibility: visible;
+}
+
+  .tooltip-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tooltip-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-left: solid 1px #e6e9f2;
+    padding-left: 10px;
+    font-weight: normal;
+  }
+
+  .tooltip-img{
+    border-radius: 50%;
   }

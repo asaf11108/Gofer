@@ -10,8 +10,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatBadgeModule} from '@angular/material/badge';
 
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
-
 import { AppComponent } from './app.component';
 import { LeftNavigatorComponent } from './left-navigator/left-navigator.component';
 import { UsersListComponent } from './users-list/users-list.component';
@@ -43,7 +41,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatBadgeModule,
     HttpClientModule,
-    TooltipModule.forRoot()
   ],
   providers: [UserService],
   bootstrap: [AppComponent],
