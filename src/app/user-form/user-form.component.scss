@@ -92,22 +92,12 @@ a {
       object-fit: cover;
   }
 
-  :host {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%; 
-    flex-direction: column;
-  }
-  p {
-    width: 80%;
-  }
-  .active {
-    color: chocolate;
-  }
-  .origin {
-     cursor: pointer;
-     text-decoration: underline;
-  }
+.banner{
+    animation: drop 5s ease forwards;
+}
+
+@keyframes drop{
+    0%{transform: translateY(-500px) ;opacity: 0}
+    70%{transform: translateY(70px)}
+    100%{transform: translateY(0px); opacity: 1;}
+}
