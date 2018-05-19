@@ -1,14 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="32" viewBox="0 0 28 32">
-    <defs>
-        <path id="b" d="M15.583 20H1.417A1.422 1.422 0 0 1 0 18.571v-10c0-.789.635-1.43 1.417-1.43h14.166c.782 0 1.417.642 1.417 1.43v10c0 .79-.635 1.429-1.417 1.429zM3.543 10a.712.712 0 0 0-.708.715c0 .394.317.714.708.714H4.96c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714H3.543zm0 2.858a.712.712 0 0 0-.708.714c0 .393.317.715.708.715H4.96a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714H3.543zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716H4.96c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713H3.543zm4.25-5.714a.712.712 0 0 0-.708.714c0 .394.317.714.708.714H9.21c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714H7.793zm0 2.857a.712.712 0 0 0-.708.714c0 .393.317.715.708.715H9.21a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714H7.793zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716H9.21c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713H7.793zm4.25-5.714a.712.712 0 0 0-.708.714c0 .394.317.714.708.714h1.417c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714h-1.417zm0 2.857a.712.712 0 0 0-.708.714c0 .393.317.715.708.715h1.417a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714h-1.417zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716h1.417c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713h-1.417zm3.54-10H1.417C.635 5.715 0 5.075 0 4.286v-1.43c0-.787.635-1.429 1.417-1.429h1.416v2.858h4.25V1.427h2.834v2.858h4.25V1.427h1.416c.782 0 1.417.64 1.417 1.429v1.43c0 .789-.635 1.429-1.417 1.429zM11.335 0h1.416v2.857h-1.416V0zM4.25 0h1.417v2.857H4.251V0z"/>
-        <filter id="a" width="217.6%" height="200%" x="-47.1%" y="-40%" filterUnits="objectBoundingBox">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.149019608 0 0 0 0 0.462745098 0 0 0 0 0.431372549 0 0 0 0.2 0"/>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="nonzero" transform="translate(3.5 4)">
-        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <use fill="#FFF" fill-rule="evenodd" xlink:href="#b"/>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28"
+   height="32"
+   viewBox="0 0 28 32"
+   version="1.1"
+   id="svg4085"
+   sodipodi:docname="calander-copy-2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata4089">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4087"
+     showgrid="false"
+     inkscape:zoom="20.85965"
+     inkscape:cx="10.827469"
+     inkscape:cy="14.209849"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4085" />
+  <defs
+     id="defs4077">
+    <path
+       id="b"
+       d="M15.583 20H1.417A1.422 1.422 0 0 1 0 18.571v-10c0-.789.635-1.43 1.417-1.43h14.166c.782 0 1.417.642 1.417 1.43v10c0 .79-.635 1.429-1.417 1.429zM3.543 10a.712.712 0 0 0-.708.715c0 .394.317.714.708.714H4.96c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714H3.543zm0 2.858a.712.712 0 0 0-.708.714c0 .393.317.715.708.715H4.96a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714H3.543zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716H4.96c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713H3.543zm4.25-5.714a.712.712 0 0 0-.708.714c0 .394.317.714.708.714H9.21c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714H7.793zm0 2.857a.712.712 0 0 0-.708.714c0 .393.317.715.708.715H9.21a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714H7.793zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716H9.21c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713H7.793zm4.25-5.714a.712.712 0 0 0-.708.714c0 .394.317.714.708.714h1.417c.39 0 .708-.32.708-.714a.712.712 0 0 0-.708-.714h-1.417zm0 2.857a.712.712 0 0 0-.708.714c0 .393.317.715.708.715h1.417a.713.713 0 0 0 .708-.715.712.712 0 0 0-.708-.714h-1.417zm0 2.857a.711.711 0 0 0-.708.713c0 .396.317.716.708.716h1.417c.39 0 .708-.32.708-.716a.711.711 0 0 0-.708-.713h-1.417zm3.54-10H1.417C.635 5.715 0 5.075 0 4.286v-1.43c0-.787.635-1.429 1.417-1.429h1.416v2.858h4.25V1.427h2.834v2.858h4.25V1.427h1.416c.782 0 1.417.64 1.417 1.429v1.43c0 .789-.635 1.429-1.417 1.429zM11.335 0h1.416v2.857h-1.416V0zM4.25 0h1.417v2.857H4.251V0z" />
+    <filter
+       id="a"
+       width="217.6%"
+       height="200%"
+       x="-47.1%"
+       y="-40%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="2"
+         dy="2"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset4070" />
+      <feGaussianBlur
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         stdDeviation="3"
+         id="feGaussianBlur4072" />
+      <feColorMatrix
+         in="shadowBlurOuter1"
+         values="0 0 0 0 0.149019608 0 0 0 0 0.462745098 0 0 0 0 0.431372549 0 0 0 0.2 0"
+         id="feColorMatrix4074" />
+    </filter>
+  </defs>
+  <g
+     transform="translate(5.7052144,5.1505467)"
+     id="g4083"
+     style="fill:none;fill-rule:nonzero">
+    <use
+       xlink:href="#b"
+       id="use4079"
+       style="fill:#000000;filter:url(#a)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       xlink:href="#b"
+       id="use4081"
+       style="fill:#ffffff;fill-rule:evenodd"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+  </g>
 </svg>

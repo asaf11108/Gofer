@@ -1,8 +1,8 @@
 <ng-template #popTemplate>User Details: <div [innerHtml]="html"></div></ng-template>
-<mat-list class="list-group1">
+<mat-list class="list-group">
   <mat-list-item class="my-title" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">Gofer Users</mat-list-item>
 
-  <mat-list-item class="list-group-item1 tooltip" *ngFor="let user of data;let i = index"
+  <mat-list-item class="list-group-item tooltip" *ngFor="let user of data;let i = index"
    (mouseenter)="hoveringFunc(user)" (mouseleave)="hovering[user.userName] = false">
     <img matListAvatar [src]="user.photoPath">
     <div matLine> {{user.firstName + " " + user.lastName}} </div>

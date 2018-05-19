@@ -70,6 +70,7 @@ form input {
 .photo-container{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     justify-content: flex-end;
     align-items: center;
     padding:  0px;
@@ -87,9 +88,10 @@ a {
   }
 
   .img-fit{
-      max-width: 166px;
-      max-height: 151px;
-      object-fit: cover;
+      width: auto;
+      height: 169px;
+      object-fit: contain;
+      border-radius: 2%
   }
 
 .banner{
