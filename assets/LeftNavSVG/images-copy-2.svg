@@ -1,14 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="26" viewBox="0 0 28 26">
-    <defs>
-        <path id="b" d="M15.786 15H1.214C.544 15 0 14.44 0 13.75V1.25C0 .56.544 0 1.214 0h14.572C16.456 0 17 .559 17 1.25v12.5c0 .69-.544 1.25-1.214 1.25zM14.57 2.444H2.43v8.751l3.642-6.25 3.643 6.25 2.429-2.5 2.428 2.5v-8.75zM9.714 5.57c0-1.036.816-1.876 1.822-1.876 1.006 0 1.821.84 1.821 1.876s-.815 1.875-1.821 1.875c-1.007 0-1.822-.84-1.822-1.875z"/>
-        <filter id="a" width="217.6%" height="233.3%" x="-47.1%" y="-53.3%" filterUnits="objectBoundingBox">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.658823529 0 0 0 0 0.533333333 0 0 0 0 0.235294118 0 0 0 0.2 0"/>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="nonzero" transform="translate(3.5 3.5)">
-        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <use fill="#FFF" fill-rule="evenodd" xlink:href="#b"/>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28"
+   height="26"
+   viewBox="0 0 28 26"
+   version="1.1"
+   id="svg3853"
+   sodipodi:docname="images-copy-2.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3857">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3855"
+     showgrid="false"
+     inkscape:zoom="25.673415"
+     inkscape:cx="1.7471249"
+     inkscape:cy="15.272608"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3853" />
+  <defs
+     id="defs3845">
+    <path
+       id="b"
+       d="M15.786 15H1.214C.544 15 0 14.44 0 13.75V1.25C0 .56.544 0 1.214 0h14.572C16.456 0 17 .559 17 1.25v12.5c0 .69-.544 1.25-1.214 1.25zM14.57 2.444H2.43v8.751l3.642-6.25 3.643 6.25 2.429-2.5 2.428 2.5v-8.75zM9.714 5.57c0-1.036.816-1.876 1.822-1.876 1.006 0 1.821.84 1.821 1.876s-.815 1.875-1.821 1.875c-1.007 0-1.822-.84-1.822-1.875z" />
+    <filter
+       id="a"
+       width="217.6%"
+       height="233.3%"
+       x="-47.1%"
+       y="-53.3%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="2"
+         dy="2"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset3838" />
+      <feGaussianBlur
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         stdDeviation="3"
+         id="feGaussianBlur3840" />
+      <feColorMatrix
+         in="shadowBlurOuter1"
+         values="0 0 0 0 0.658823529 0 0 0 0 0.533333333 0 0 0 0 0.235294118 0 0 0 0.2 0"
+         id="feColorMatrix3842" />
+    </filter>
+  </defs>
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     style="fill:#000000;fill-rule:nonzero;filter:url(#a)"
+     id="use3847"
+     xlink:href="#b"
+     transform="translate(3.5,3.5)" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     style="fill:#ffffff;fill-rule:evenodd"
+     id="use3849"
+     xlink:href="#b"
+     transform="translate(5.6033431,5.3306874)" />
 </svg>

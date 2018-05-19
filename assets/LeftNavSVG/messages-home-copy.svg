@@ -1,14 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="31" viewBox="0 0 30 31">
-    <defs>
-        <path id="b" d="M23.288 27.143l-2.567 3.437a.9.9 0 0 1-1.442 0l-2.567-3.437h-3.289c-1.613 0-2.923-1.607-2.923-3.229v-9.979A2.93 2.93 0 0 1 13.423 11h13.154a2.93 2.93 0 0 1 2.923 2.935v9.979c0 1.62-1.31 3.229-2.923 3.229h-3.289zm-8.403-4.592c0 .406.328.734.733.734h8.764a.734.734 0 1 0 0-1.467h-8.764a.734.734 0 0 0-.733.733zm.733-4.213a.734.734 0 1 0 0 1.467h8.764a.734.734 0 0 0 0-1.467h-8.764zm0-3.48a.733.733 0 1 0 0 1.465h8.764a.733.733 0 0 0 0-1.466h-8.764z"/>
-        <filter id="a" width="205.3%" height="200%" x="-42.1%" y="-40%" filterUnits="objectBoundingBox">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.164705882 0 0 0 0 0.364705882 0 0 0 0 0.564705882 0 0 0 0.2 0"/>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="nonzero" transform="translate(-7 -7)">
-        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <use fill="#FFF" fill-rule="evenodd" xlink:href="#b"/>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="31"
+   viewBox="0 0 30 31"
+   version="1.1"
+   id="svg3807"
+   sodipodi:docname="messages-home-copy.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3811">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3809"
+     showgrid="false"
+     inkscape:zoom="21.532542"
+     inkscape:cx="12.900304"
+     inkscape:cy="16.05495"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3807" />
+  <defs
+     id="defs3799">
+    <path
+       id="b"
+       d="M23.288 27.143l-2.567 3.437a.9.9 0 0 1-1.442 0l-2.567-3.437h-3.289c-1.613 0-2.923-1.607-2.923-3.229v-9.979A2.93 2.93 0 0 1 13.423 11h13.154a2.93 2.93 0 0 1 2.923 2.935v9.979c0 1.62-1.31 3.229-2.923 3.229h-3.289zm-8.403-4.592c0 .406.328.734.733.734h8.764a.734.734 0 1 0 0-1.467h-8.764a.734.734 0 0 0-.733.733zm.733-4.213a.734.734 0 1 0 0 1.467h8.764a.734.734 0 0 0 0-1.467h-8.764zm0-3.48a.733.733 0 1 0 0 1.465h8.764a.733.733 0 0 0 0-1.466h-8.764z" />
+    <filter
+       id="a"
+       width="205.3%"
+       height="200%"
+       x="-42.1%"
+       y="-40%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="2"
+         dy="2"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset3792" />
+      <feGaussianBlur
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         stdDeviation="3"
+         id="feGaussianBlur3794" />
+      <feColorMatrix
+         in="shadowBlurOuter1"
+         values="0 0 0 0 0.164705882 0 0 0 0 0.364705882 0 0 0 0 0.564705882 0 0 0 0.2 0"
+         id="feColorMatrix3796" />
+    </filter>
+  </defs>
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     style="fill:#000000;fill-rule:nonzero;filter:url(#a)"
+     id="use3801"
+     xlink:href="#b"
+     transform="translate(-4.9565812,-5.7925253)" />
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     style="fill:#ffffff;fill-rule:evenodd"
+     id="use3803"
+     xlink:href="#b"
+     transform="translate(-4.9565812,-5.7925253)" />
 </svg>

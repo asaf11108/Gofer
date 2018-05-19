@@ -1,14 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="31" viewBox="0 0 28 31">
-    <defs>
-        <path id="b" d="M9.455 1.462h1.454a.73.73 0 1 1 0 1.462H5.091a.73.73 0 0 1 0-1.462h1.454a.73.73 0 0 1 0-1.462h2.91a.73.73 0 0 1 .727.73.73.73 0 0 1-.727.732zm-6.546 0v.523a2.4 2.4 0 0 0 2.4 2.4h5.382a2.4 2.4 0 0 0 2.4-2.4v-.523h1.454c.803 0 1.455.653 1.455 1.461v14.615c0 .809-.652 1.462-1.455 1.462H1.455A1.458 1.458 0 0 1 0 17.538V2.923c0-.808.652-1.461 1.455-1.461h1.454zm.294 5.505a.536.536 0 1 0 0 1.071H8.53a.536.536 0 0 0 0-1.071H3.203zm0 3.75a.536.536 0 0 0 0 1.073H8.53a.536.536 0 0 0 0-1.072H3.203zm0 3.752a.536.536 0 1 0 0 1.072H8.53a.536.536 0 1 0 0-1.072H3.203zm8.819-5.7l1.352-1.653a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.351-.419-.481a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .533l.698.803c.04.046.088.077.144.098.128.069.304.036.416-.093zm0 3.484l1.352-1.654a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.351-.419-.48a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .532l.698.804c.04.045.088.077.144.097.128.07.304.036.416-.092zm0 3.483l1.352-1.653a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.35-.419-.48a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .532l.698.804c.04.046.088.077.144.098.128.069.304.035.416-.093z"/>
-        <filter id="a" width="225%" height="205.3%" x="-50%" y="-42.1%" filterUnits="objectBoundingBox">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.337254902 0 0 0 0 0.631372549 0 0 0 0 0.360784314 0 0 0 0.2 0"/>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="nonzero" transform="translate(4 4)">
-        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <use fill="#FFF" fill-rule="evenodd" xlink:href="#b"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28"
+   height="31"
+   viewBox="0 0 28 31"
+   version="1.1"
+   id="svg3751"
+   sodipodi:docname="to-do-copy.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3755">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3753"
+     showgrid="false"
+     inkscape:zoom="19.342792"
+     inkscape:cx="16.119425"
+     inkscape:cy="17.305562"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3751" />
+  <defs
+     id="defs3743">
+    <path
+       id="b"
+       d="M9.455 1.462h1.454a.73.73 0 1 1 0 1.462H5.091a.73.73 0 0 1 0-1.462h1.454a.73.73 0 0 1 0-1.462h2.91a.73.73 0 0 1 .727.73.73.73 0 0 1-.727.732zm-6.546 0v.523a2.4 2.4 0 0 0 2.4 2.4h5.382a2.4 2.4 0 0 0 2.4-2.4v-.523h1.454c.803 0 1.455.653 1.455 1.461v14.615c0 .809-.652 1.462-1.455 1.462H1.455A1.458 1.458 0 0 1 0 17.538V2.923c0-.808.652-1.461 1.455-1.461h1.454zm.294 5.505a.536.536 0 1 0 0 1.071H8.53a.536.536 0 0 0 0-1.071H3.203zm0 3.75a.536.536 0 0 0 0 1.073H8.53a.536.536 0 0 0 0-1.072H3.203zm0 3.752a.536.536 0 1 0 0 1.072H8.53a.536.536 0 1 0 0-1.072H3.203zm8.819-5.7l1.352-1.653a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.351-.419-.481a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .533l.698.803c.04.046.088.077.144.098.128.069.304.036.416-.093zm0 3.484l1.352-1.654a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.351-.419-.48a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .532l.698.804c.04.045.088.077.144.097.128.07.304.036.416-.092zm0 3.483l1.352-1.653a.434.434 0 0 0-.002-.558.354.354 0 0 0-.544 0l-1.125 1.35-.419-.48a.34.34 0 0 0-.52 0 .413.413 0 0 0 0 .532l.698.804c.04.046.088.077.144.098.128.069.304.035.416-.093z" />
+    <filter
+       id="a"
+       width="225%"
+       height="205.3%"
+       x="-50%"
+       y="-42.1%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="2"
+         dy="2"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset3736" />
+      <feGaussianBlur
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         stdDeviation="3"
+         id="feGaussianBlur3738" />
+      <feColorMatrix
+         in="shadowBlurOuter1"
+         values="0 0 0 0 0.337254902 0 0 0 0 0.631372549 0 0 0 0 0.360784314 0 0 0 0.2 0"
+         id="feColorMatrix3740" />
+    </filter>
+  </defs>
+  <use
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     style="fill:#000000;fill-rule:nonzero;filter:url(#a)"
+     id="use3745"
+     xlink:href="#b"
+     transform="translate(4,4)" />
+  <g
+     id="g3762"
+     clip-path="none"
+     transform="translate(-0.16396664,1.2277823)">
+    <g
+       inkscape:label="Clip"
+       id="g3760">
+      <use
+         transform="translate(6.303066,4.5849057)"
+         xlink:href="#b"
+         id="use3747"
+         style="fill:#ffffff;fill-rule:evenodd"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
     </g>
+  </g>
+  <use
+     height="100%"
+     width="100%"
+     id="use3766"
+     xlink:href="#g3760"
+     y="0"
+     x="0"
+     transform="translate(-0.16396664,1.2277823)" />
 </svg>
